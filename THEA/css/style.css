@@ -63,6 +63,7 @@ a.rpanel:hover{ color: #fff; }
 	height: 80px;
 	position: fixed;
 	margin-top: 30px;
+	z-index: 999999;
 }
 
 #nav { width: 410px; float: right; margin-top: 20px; }
