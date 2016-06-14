@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Aletha!</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+
+<!----- JQUERY FOR SLIDING NAVIGATION --->
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+</script>
+ </head>
+
+<body>
+<!----- HEADER START--->
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> A Short Message </a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Hello!</a></li>
+		<li><a href="#slide2" title="Next Section">Intro</a></li>
+		<li><a href="#slide3" title="Next Section">Drama1</a></li>
+		<li><a  href="#slide4" title="Next Section">Drama2</a></li>
+		<li><a href="#slide5" title="Next Section">m0ar!!</a></li>
+	</ul>
+</nav>
+</div>
+</header>
+<!----- HEADER END--->
+
+<!----- SLIDES START --->
+	<div id="slide1">
+		<div class="content">
+			<div id="heart"> </div>
+			<div id="heart"></div>
+			<div id="heart"></div>
+            <h2>IT HAS</h2>
+		    <h1>BEEN</h1>
+		    <h3>A YEAR!</h3>
+           <div id="ribbon"></div>
+	       <div id="new_year"> </div>
+		</div>
+    </div>
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <h3 class="quotes">“I never thought I would meet someone like you... but I did! Things were really downhill when I met you. It's as if that you came into my life at the right time at a place I never expected.”</h3>
+		</div>
+		</div>
+    </div>
+
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+		       <h3 class="quotes">“Wow! It has been quite a ride! Thank you for being with me through whatever. Challenges and obstacles may come but we will endure. As long as we're together, we can do whatever.”</h3>
+		    </div>
+		</div>
+    </div>
+
+	<div id="slide4">
+        <video autoplay loop>
+            <source src="vid/vid.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+            <source src="vid/vid.webm" type='video/webm' >
+            <source src="vid/vid.mp4" type='video/mp4'>
+            <p>Video is not visible, most likely your browser does not support HTML5 video</p>
+        </video>
+		<div class="content">
+        <div class="quotes_container">
+		    <h3 class="quotes hide-on-view" style="color:white;"></h3>
+		</div>
+		</div>
+    </div>
+
+	<div id="slide5">
+		<div class="content">
+           <div class="quotes_container">
+		    <h3 class="quotes">“I am looking forward to more adventures with you!” </h3>
+		  </div>
+		</div>
+    </div>
+
+<!----- SLIDES END --->
+
+</body>
+</html>
