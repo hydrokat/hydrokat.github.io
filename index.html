@@ -257,7 +257,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Argieson Bacani 2016
+                        Copyright &copy; Argieson Bacani <span id="copyright-year"></span>
                     </div>
                 </div>
             </div>
@@ -514,6 +514,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+
+    <script>
+        document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
+    </script>
 
 </body>
 
