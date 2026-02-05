@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT | ARGIESON BACANI | SYS_OS</title>
+    <title>CONTACT | ARGIESON BACANI | FS_DEV</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,13 +99,24 @@
                     <a href="contact.html" class="text-terminal-green hover:bg-terminal-green hover:text-terminal-bg px-3 py-1 transition-all">CONTACT</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button class="text-terminal-green">[MENU]</button>
+                    <button id="mobile-menu-btn" class="text-terminal-green hover:text-terminal-green/80 focus:outline-none">
+                        [MENU]
+                    </button>
+                </div>
+            </div>
+             <!-- Mobile Menu -->
+             <div id="mobile-menu" class="hidden md:hidden border-t border-terminal-green/30 bg-terminal-header">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="index.html" class="block text-terminal-green/70 hover:text-terminal-green hover:bg-terminal-green/10 px-3 py-2 transition-all">HOME</a>
+                    <a href="about.html" class="block text-terminal-green/70 hover:text-terminal-green hover:bg-terminal-green/10 px-3 py-2 transition-all">ABOUT</a>
+                    <a href="portfolio.html" class="block text-terminal-green/70 hover:text-terminal-green hover:bg-terminal-green/10 px-3 py-2 transition-all">PORTFOLIO</a>
+                    <a href="contact.html" class="block text-terminal-green hover:bg-terminal-green hover:text-terminal-bg px-3 py-2 transition-all">CONTACT</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 py-20">
+    <main class="max-w-4xl mx-auto px-4 py-10 md:py-20">
         <header class="mb-12">
             <h1 class="text-3xl font-bold italic mb-2 glitch-title" data-text="COMMUNICATION ENCRYPTOR.EXE">COMMUNICATION ENCRYPTOR.EXE</h1>
             <p class="text-terminal-green/60">NODE_01 // ENCRYPTION: 256-BIT // STATUS: LISTENING</p>
@@ -113,7 +124,7 @@
 
         <section class="space-y-12">
             <div class="border border-terminal-green/30 p-8">
-                <h2 class="text-xl font-bold mb-8 italic">AVAILABLE_TRANSMISSION_CHANNELS:</h2>
+                <h2 class="text-xl font-bold mb-8 italic break-all">AVAILABLE_TRANSMISSION_CHANNELS:</h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <a href="https://github.com/hydrokat" target="_blank" class="group border border-terminal-green/20 p-6 hover:bg-terminal-green hover:text-terminal-bg transition-all">
@@ -156,12 +167,11 @@
     </main>
 
     <footer class="mt-20 border-t border-terminal-green/30 py-8 text-center text-sm text-terminal-green/50">
-        <p>Copyright &copy; Argieson Bacani <span id="copyright-year"></span> | SYS_OS v1.3.37</p>
+        <p>Copyright &copy; Argieson Bacani <span id="copyright-year"></span> | FS_DEV v1.3.37</p>
     </footer>
 
-    <script>
-        document.getElementById('copyright-year').innerText = new Date().getFullYear();
-    </script>
+    <script src="js/copy.js"></script>
     <script src="js/glitch.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARGIESON BACANI | SYS_OS v1.3.37</title>
+    <title>ARGIESON BACANI | FS_DEV v1.3.37</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,14 +99,25 @@
                     <a href="contact.html" class="text-terminal-green/70 hover:text-terminal-green px-3 py-1 transition-all border border-transparent hover:border-terminal-green">CONTACT</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <!-- Mobile Menu Button (Simplified) -->
-                    <button class="text-terminal-green">[MENU]</button>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="text-terminal-green hover:text-terminal-green/80 focus:outline-none">
+                        [MENU]
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden border-t border-terminal-green/30 bg-terminal-header">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="index.html" class="block text-terminal-green hover:bg-terminal-green hover:text-terminal-bg px-3 py-2 transition-all">HOME</a>
+                    <a href="about.html" class="block text-terminal-green/70 hover:text-terminal-green hover:bg-terminal-green/10 px-3 py-2 transition-all">ABOUT</a>
+                    <a href="portfolio.html" class="block text-terminal-green/70 hover:text-terminal-green hover:bg-terminal-green/10 px-3 py-2 transition-all">PORTFOLIO</a>
+                    <a href="contact.html" class="block text-terminal-green/70 hover:text-terminal-green hover:bg-terminal-green/10 px-3 py-2 transition-all">CONTACT</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 py-20">
+    <main class="max-w-4xl mx-auto px-4 py-10 md:py-20">
         <header class="mb-12">
             <div class="border border-terminal-green/50 p-1 mb-6">
                 <div class="bg-terminal-green/10 p-8 border border-terminal-green/20">
@@ -162,12 +173,11 @@
     </main>
 
     <footer class="mt-20 border-t border-terminal-green/30 py-8 text-center text-sm text-terminal-green/50">
-        <p>Copyright &copy; Argieson Bacani <span id="copyright-year"></span> | SYS_OS v1.3.37</p>
+        <p>Copyright &copy; Argieson Bacani <span id="copyright-year"></span> | FS_DEV v1.3.37</p>
     </footer>
 
-    <script>
-        document.getElementById('copyright-year').innerText = new Date().getFullYear();
-    </script>
+    <script src="js/copy.js"></script>
     <script src="js/glitch.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
