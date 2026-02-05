@@ -1,0 +1,103 @@
+{
+  "name": "Argieson Bacani",
+  "contact_info": {
+    "email": "by request",
+    "phone": "by request",
+    "linkedin": "https://www.linkedin.com/in/abacani",
+    "github": "https://github.com/hydrokat"
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "name": "Driver Ed in a Box",
+        "description": "Driver Ed in a Box® is a driving lesson course that features an online classroom.",
+        "client_name": "Driver Ed in a Box, LLC",
+        "date": "August 2013",
+        "services_rendered": "Web Development",
+        "url": "http://driveredinabox.com/"
+      },
+      {
+        "name": "Living Pianos",
+        "description": "Living Pianos is an online piano store with a showroom/studios in Santa Ana, California.",
+        "client_name": "Living Pianos",
+        "date": "November 2014",
+        "services_rendered": "Web Development",
+        "url": "http://livingpianos.com/"
+      },
+      {
+        "name": "Sailchecker",
+        "description": "A Yacht Charter Search Engine",
+        "client_name": "Sailchecker Ltd",
+        "date": "April 2013",
+        "services_rendered": "Web Development",
+        "url": "https://sailchecker.com/"
+      },
+      {
+        "name": "Certificate Automation",
+        "description": "A Let's Encrypt Certificate manager",
+        "client_name": "Certificate Automation",
+        "date": "July 2016",
+        "services_rendered": "Web Development",
+        "url": "https://certificateautomation.com/"
+      },
+      {
+        "name": "CheckApp",
+        "description": "App for Ampalaya+",
+        "client_name": "Nattural Quality Corporation",
+        "date": "December 2017",
+        "services_rendered": "App Development",
+        "url": "http://gonatural.com.ph/"
+      },
+      {
+        "name": "LactApp",
+        "description": "App for Ampalaya+",
+        "client_name": "Nattural Quality Corporation",
+        "date": "December 2017",
+        "services_rendered": "App Development",
+        "url": "http://gonatural.com.ph/"
+      },
+      {
+        "name": "Pulsar Hotels",
+        "description": "Pulsar Hotels",
+        "client_name": "Pulsar Hotel",
+        "date": "June 2019",
+        "services_rendered": "Website Development and Design",
+        "url": "https://pulsarhotels.com/"
+      },
+      {
+        "name": "Villarica Pawnshop",
+        "description": "Villarica Pawnshop",
+        "client_name": "Villarica Pawnshop",
+        "date": "December 2019",
+        "services_rendered": "Website Development and Optimization",
+        "url": "https://www.villaricapawnshop.ph"
+      },
+      {
+        "name": "Solana Cagayan BIS",
+        "description": "Barangay Information System for local DRRM",
+        "client_name": "Solana Cagayan",
+        "date": "September 2021",
+        "services_rendered": "Systems Development",
+        "url": "https://web.facebook.com/profile.php?id=100086577708362"
+      },
+      {
+        "name": "Parahero",
+        "description": "Parahero",
+        "client_name": "Parahero",
+        "date": "January 2021",
+        "services_rendered": "Systems Development, Mobile App Development",
+        "url": "https://web.facebook.com/PARAHERO.APP.PH"
+      }
+    ]
+  },
+  "tech_stack": [
+    "NextJS",
+    "Laravel",
+    "Flutter",
+    "Tailwind",
+    "Shadcn",
+    "Git",
+    "Proxmox",
+    "Docker"
+  ]
+}

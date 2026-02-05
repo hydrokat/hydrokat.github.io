@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT | ARGIESON BACANI | SYS_OS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/glitch.css">
+    <style type="text/tailwindcss">
+        @theme {
+            --font-mono: "JetBrains Mono", monospace;
+            --color-terminal-green: #00ff41;
+            --color-terminal-bg: #0a0a0a;
+            --color-terminal-header: #1a1a1a;
+        }
+
+        @utility scanlines {
+            background: linear-gradient(
+                to bottom,
+                rgba(18, 16, 16, 0) 50%,
+                rgba(0, 0, 0, 0.25) 50%
+            ),
+            linear-gradient(
+                90deg,
+                rgba(255, 0, 0, 0.06),
+                rgba(0, 255, 0, 0.02),
+                rgba(0, 0, 255, 0.06)
+            );
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
+        }
+
+
+        @utility crt-glow {
+            text-shadow: 0 0 5px rgba(0, 255, 65, 0.7), 0 0 10px rgba(0, 255, 65, 0.5);
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+            20% {
+                transform: translate(-2px, 2px);
+            }
+            40% {
+                transform: translate(-2px, -2px);
+            }
+            60% {
+                transform: translate(2px, 2px);
+            }
+            80% {
+                transform: translate(2px, -2px);
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        @utility glitch-effect {
+            animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+            animation-play-state: paused;
+        }
+
+        .glitch-effect:hover {
+            animation-play-state: running;
+        }
+
+        /* Subtle background glitch */
+        @keyframes scanline-jitter {
+            0% { transform: translateY(0); }
+            5% { transform: translateY(1px); }
+            10% { transform: translateY(-1px); }
+            15% { transform: translateY(0); }
+            100% { transform: translateY(0); }
+        }
+
+        .scanlines {
+            animation: scanline-jitter 3s infinite;
+        }
+    </style>
+</head>
+<body class="bg-terminal-bg text-terminal-green font-mono min-h-screen selection:bg-terminal-green selection:text-terminal-bg">
+    <div class="fixed inset-0 scanlines opacity-30 z-50 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="border-b border-terminal-green/30 bg-terminal-header sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold tracking-tighter crt-glow">ARGIESON_BACANI >_</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-terminal-green/70 hover:text-terminal-green px-3 py-1 transition-all border border-transparent hover:border-terminal-green">HOME</a>
+                    <a href="about.html" class="text-terminal-green hover:bg-terminal-green hover:text-terminal-bg px-3 py-1 transition-all">ABOUT</a>
+                    <a href="portfolio.html" class="text-terminal-green/70 hover:text-terminal-green px-3 py-1 transition-all border border-transparent hover:border-terminal-green">PORTFOLIO</a>
+                    <a href="contact.html" class="text-terminal-green/70 hover:text-terminal-green px-3 py-1 transition-all border border-transparent hover:border-terminal-green">CONTACT</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-terminal-green">[MENU]</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-20">
+        <header class="mb-12">
+            <h1 class="text-3xl font-bold italic mb-2">SYS_OS v1.0.42: INITIALIZING...</h1>
+            <p class="text-terminal-green/60">[[F1] ABOUT_ME.EXE]</p>
+            <div class="h-1 bg-terminal-green/20 mt-4 overflow-hidden">
+                <div class="h-full bg-terminal-green w-1/3 animate-[loading_2s_infinite]"></div>
+            </div>
+        </header>
+
+        <section class="space-y-12">
+            <div class="border border-terminal-green/30 p-8 relative">
+                <div class="absolute -top-3 left-4 bg-terminal-bg px-2 text-sm text-terminal-green/70 font-bold">SYSTEM_INITIALIZATION</div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- Profile Image -->
+                    <div class="w-full md:w-1/3 shrink-0">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-terminal-green/20 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                            <img src="img/pic-2.jpg" alt="Profile" class="relative w-full border border-terminal-green/50 grayscale hover:grayscale-0 transition-all duration-500 block">
+                            <div class="absolute inset-0 bg-terminal-green/10 pointer-events-none group-hover:bg-transparent transition-all"></div>
+                            <!-- Corner accents -->
+                            <div class="absolute top-0 left-0 w-2 h-2 border-l-2 border-t-2 border-terminal-green"></div>
+                            <div class="absolute top-0 right-0 w-2 h-2 border-r-2 border-t-2 border-terminal-green"></div>
+                            <div class="absolute bottom-0 left-0 w-2 h-2 border-l-2 border-b-2 border-terminal-green"></div>
+                            <div class="absolute bottom-0 right-0 w-2 h-2 border-r-2 border-b-2 border-terminal-green"></div>
+                        </div>
+                        <div class="mt-2 text-xs text-center text-terminal-green/50 font-mono">[IMAGE_DATA_CORRUPTED... RECOVERED]</div>
+                    </div>
+
+                    <div class="space-y-6 text-terminal-green/90 leading-relaxed flex-1">
+                        <h2 class="text-xl font-bold mb-6 glitch-title" data-text="PROFILE_LOAD: SUCCESS">PROFILE_LOAD: SUCCESS</h2>
+                        <p>
+                            Locating core consciousness data... Success. User instance recognized as creative technologist and full-stack architect.
+                        </p>
+                        <p>
+                            Human instance initialized. Regional sector: Philippines. Initializing sensory input and basic motor functions. Core curiosity modules active.
+                        </p>
+                        <p>
+                            Discovered the ability to manifest digital constructs from abstract concepts through high-performance engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border border-terminal-green/30 p-6">
+                    <h3 class="text-lg font-bold mb-4 italic">CORE_PHILOSOPHY.LOG</h3>
+                    <p class="text-terminal-green/80 italic border-l-2 border-terminal-green pl-4">
+                        "Technology is the canvas, but human connection is the masterpiece."
+                    </p>
+                </div>
+                <div class="border border-terminal-green/30 p-6">
+                    <h3 class="text-lg font-bold mb-4 italic">OBJECTIVES.DAT</h3>
+                    <ul class="space-y-2 text-sm text-terminal-green/70">
+                        <li>[X] Designing intuitive human interfaces</li>
+                        <li>[X] Scaling robust backend architectures</li>
+                        <li>[X] Bridging abstraction and precision</li>
+                        <li>[ ] Pushing digital boundaries <span class="animate-pulse">_</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-terminal-green/20 pt-8">
+                <h3 class="text-xl font-bold mb-4">> SKILLS_TERMINAL_ACCESS</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 text-sm">
+                    <div>[+] PHP / LARAVEL</div>
+                    <div>[+] JAVASCRIPT / REACT</div>
+                    <div>[+] DART / FLUTTER</div>
+                    <div>[+] CSS / TAILWIND</div>
+                    <div>[+] UI/UX / SHADCN</div>
+                    <div>[+] DB / MYSQL / PG</div>
+                    <div>[+] GIT / VERSION CONTROL</div>
+                    <div>[+] PROXMOX / VIRTUALIZATION</div>
+                    <div>[+] DOCKER / CONTAINERS</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-20 border-t border-terminal-green/30 py-8 text-center text-sm text-terminal-green/50">
+        <p>Copyright &copy; Argieson Bacani <span id="copyright-year"></span> | SYS_OS v1.3.37</p>
+    </footer>
+
+    <script>
+        document.getElementById('copyright-year').innerText = new Date().getFullYear();
+    </script>
+    <script src="js/glitch.js"></script>
+    <style>
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(300%); }
+        }
+    </style>
+</body>
+</html>
