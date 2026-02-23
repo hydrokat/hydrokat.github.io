@@ -9,6 +9,14 @@
   "portfolio": {
     "projects": [
       {
+        "name": "Philippine Hop On Hop Off",
+        "description": "The Philippines Hop-On Hop-Off (HOHO) initiative, dubbed the “Travel by the Hubs Project,” is a unique program focused on revitalizing tourism in Metro Manila.",
+        "client_name": "Positive Exposure Productions Inc.",
+        "date": "March 2025",
+        "services_rendered": "Web & Systems Development",
+        "url": "https://philippines-hoho.ph/"
+      },
+      {
         "name": "Driver Ed in a Box",
         "description": "Driver Ed in a Box® is a driving lesson course that features an online classroom.",
         "client_name": "Driver Ed in a Box, LLC",
