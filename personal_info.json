@@ -9,6 +9,22 @@
   "portfolio": {
     "projects": [
       {
+        "name": "Queue Management System",
+        "description": "Queue Management System",
+        "client_name": "Personal Project",
+        "date": "March 2026",
+        "services_rendered": "Web & Systems Development",
+        "url": "https://qms-demo.hydrokat.me"
+      },
+      {
+        "name": "Soros Security Services Website",
+        "description": "Website for Soros Security Services, a security services provider in the Philippines.",
+        "client_name": "Soros Security Consulting",
+        "date": "August 2024",
+        "services_rendered": "Web & Systems Development",
+        "url": "https://sorosservices.com/"
+      },
+      {
         "name": "Philippine Hop On Hop Off",
         "description": "The Philippines Hop-On Hop-Off (HOHO) initiative, dubbed the “Travel by the Hubs Project,” is a unique program focused on revitalizing tourism in Metro Manila.",
         "client_name": "Positive Exposure Productions Inc.",
