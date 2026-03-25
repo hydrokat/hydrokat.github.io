@@ -9,6 +9,14 @@
   "portfolio": {
     "projects": [
       {
+        "name": "Warehouse Management System",
+        "description": "Warehouse Management System",
+        "client_name": "Personal Project",
+        "date": "March 2026",
+        "services_rendered": "Systems Development",
+        "url": "https://wms-demo.hydrokat.me"
+      },
+      {
         "name": "Queue Management System",
         "description": "Queue Management System",
         "client_name": "Personal Project",
